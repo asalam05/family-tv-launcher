@@ -3,6 +3,18 @@
 You need a laptop on the same Wi-Fi as the TV, plus about 20 minutes. Do this once, and later
 updates are just step 4 again.
 
+## Quick way (Mac)
+
+After step 1 below, one command does everything else: it installs ADB if needed, installs the app,
+grants the permissions and offers to switch off PatchWall. Add a photos folder as a second argument
+to copy photos too.
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/asalam05/family-tv-launcher/main/scripts/install-tv.sh | bash -s -- 192.168.1.40 ~/Pictures/family
+```
+
+Run the same command again whenever there's a new version.
+
 ## 1. Turn on developer mode on the TV
 
 1. On the TV, open **Settings → Device Preferences → About**.
